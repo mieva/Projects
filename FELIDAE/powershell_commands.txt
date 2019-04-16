@@ -1,0 +1,15 @@
+//////////// REPLACE A TEXT
+(Get-Content c:\temp\test.txt).replace("MYID", "MyValue") | Set-Content c:\temp\test.txt
+
+////////////////////COPY FILES IN A LIST
+Get-Content .\test_list.txt | Foreach-Object { copy-item -Path $_ -Destination "C:\Users\Michela\Desktop\ieva\DATASCIENCE\PROJECTS\FELIDAE\TEST\"}
+Get-Content .\Pumas_from_2016_mod_1000.txt | Foreach-Object { copy-item -Path $_ -Destination "D:\Users\Felidae\Desktop\michela\PUMA\"}
+
+///////////////////SELECT n LINES IN FILE
+PS C:\Users\Michela\Desktop\ieva\DATASCIENCE\PROJECTS\FELIDAE> Get-Content "Bobcat_images.txt" | select -First 1000 | Out-File "Bobcat_images_1000.txt"
+
+//////////////// COUNT THE MEAN DIMENSION OF FILES
+$foo = (Get-ChildItem -path "c:\your\file\path" -recurse | measure-object | select -expand Count)
+$bar = ((Get-ChildItem -path "c:\your\file\path" -recurse | Measure-Object -property length -sum).sum /1MB)
+$avrg = $bar / $foo
+$avrg

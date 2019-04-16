@@ -1,0 +1,11 @@
+https://www.quora.com/Is-it-possible-to-convert-my-MS-Access-database-to-Cloud-SQL-Google-if-so-how-can-I-connect-them
+
+\\\\\\\\\\\ TO MIGRATE TO MICROSOFT CLOUD (MS SQL Server or Azure SQL DB)
+http://holowczak.com/migrating-a-microsoft-access-database-to-sql-server/
+
+\\\\\\\\\\\ TO MIGRATE TO GOOGLE CLOUD (MySQL)
+https://www.mysql.com/why-mysql/white-papers/a-guide-for-migrating-from-microsoft-access-to-mysql/
+https://www.mysql.com/why-mysql/migration/
+
+//////////ANGULAR +MYSQL+ to display images
+https://www.js-tutorials.com/nodejs-tutorial/nodejs-example-upload-store-image-mysql-express-js/
